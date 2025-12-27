@@ -31,12 +31,32 @@
             <button onclick="setArt('Mountain Silence')">Inquire to Buy</button>
         </div>
     </div>
-</div>
+
+    <div class="art-card">
+        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=501" alt="Art 3">
+        <div class="art-info">
+            <h3>Ocean Breeze</h3>
+            <p class="price">$175.00</p>
+            <button onclick="setArt('Ocean Breeze')">Inquire to Buy</button>
+        </div>
+    </div>
+
+    <div class="art-card">
+        <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=501" alt="Art 4">
+        <div class="art-info">
+            <h3>Golden Sunset</h3>
+            <p class="price">$300.00</p>
+            <button onclick="setArt('Golden Sunset')">Inquire to Buy</button>
+        </div>
+    </div>
+
+    </div>
 
 <section id="inquiry-form">
     <h2>Purchase Inquiry</h2>
+    <p>Click "Inquire to Buy" on any artwork above to select it.</p>
     <form action="/inquiry" method="POST">
-        <input type="text" id="artTitle" name="artTitle" readonly placeholder="Selected Artwork"><br>
+        <input type="text" id="artTitle" name="artTitle" readonly placeholder="Selected Artwork" style="background-color: #eee;"><br>
         <input type="text" name="customerName" placeholder="Your Name" required><br>
         <input type="email" name="email" placeholder="Your Email" required><br>
         <textarea name="message" placeholder="Questions or delivery details?"></textarea><br>
