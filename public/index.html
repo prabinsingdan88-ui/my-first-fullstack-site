@@ -10,57 +10,77 @@
 
 <header>
     <h1>Prabin Singdan Art Store</h1>
-    <p>Original Artworks for Sale</p>
+    <p>Premium Original Artworks</p>
+    <div class="filter-buttons">
+        <button onclick="filterArt('all')">Show All</button>
+        <button onclick="filterArt('abstract')">Abstract</button>
+        <button onclick="filterArt('landscape')">Landscapes</button>
+        <button onclick="filterArt('portrait')">Portraits</button>
+    </div>
 </header>
 
-<div class="gallery">
-    <div class="art-card">
-        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=500" alt="Art 1">
-        <div class="art-info">
-            <h3>Abstract Dreams</h3>
-            <p class="price">$150.00</p>
-            <button onclick="setArt('Abstract Dreams')">Inquire to Buy</button>
-        </div>
+<div class="gallery" id="artGallery">
+    <div class="art-card abstract">
+        <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=500" alt="Art">
+        <div class="art-info"><h3>Abstract Fire</h3><p class="price">$150</p><button onclick="setArt('Abstract Fire')">Inquire</button></div>
+    </div>
+    <div class="art-card landscape">
+        <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500" alt="Art">
+        <div class="art-info"><h3>Himalayan Peak</h3><p class="price">$250</p><button onclick="setArt('Himalayan Peak')">Inquire</button></div>
+    </div>
+    <div class="art-card portrait">
+        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=500" alt="Art">
+        <div class="art-info"><h3>The Watcher</h3><p class="price">$300</p><button onclick="setArt('The Watcher')">Inquire</button></div>
     </div>
 
-    <div class="art-card">
-        <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=500" alt="Art 2">
-        <div class="art-info">
-            <h3>Mountain Silence</h3>
-            <p class="price">$200.00</p>
-            <button onclick="setArt('Mountain Silence')">Inquire to Buy</button>
-        </div>
+    <div class="art-card abstract">
+        <img src="https://images.unsplash.com/photo-1549490349-8643362247b5?w=500" alt="Art">
+        <div class="art-info"><h3>Blue Waves</h3><p class="price">$120</p><button onclick="setArt('Blue Waves')">Inquire</button></div>
+    </div>
+    <div class="art-card landscape">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500" alt="Art">
+        <div class="art-info"><h3>Forest Light</h3><p class="price">$180</p><button onclick="setArt('Forest Light')">Inquire</button></div>
+    </div>
+    <div class="art-card abstract">
+        <img src="https://images.unsplash.com/photo-1500462859273-51970d29480a?w=500" alt="Art">
+        <div class="art-info"><h3>Neon Nights</h3><p class="price">$210</p><button onclick="setArt('Neon Nights')">Inquire</button></div>
     </div>
 
-    <div class="art-card">
-        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=501" alt="Art 3">
-        <div class="art-info">
-            <h3>Ocean Breeze</h3>
-            <p class="price">$175.00</p>
-            <button onclick="setArt('Ocean Breeze')">Inquire to Buy</button>
-        </div>
+    <div class="art-card landscape">
+        <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=500" alt="Art">
+        <div class="art-info"><h3>Quiet Lake</h3><p class="price">$190</p><button onclick="setArt('Quiet Lake')">Inquire</button></div>
+    </div>
+    <div class="art-card portrait">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=500" alt="Art">
+        <div class="art-info"><h3>Elder Soul</h3><p class="price">$400</p><button onclick="setArt('Elder Soul')">Inquire</button></div>
+    </div>
+    <div class="art-card landscape">
+        <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=500" alt="Art">
+        <div class="art-info"><h3>Sunset Valley</h3><p class="price">$220</p><button onclick="setArt('Sunset Valley')">Inquire</button></div>
     </div>
 
-    <div class="art-card">
-        <img src="https://images.unsplash.com/photo-1578301978693-85fa9c0320b9?w=501" alt="Art 4">
-        <div class="art-info">
-            <h3>Golden Sunset</h3>
-            <p class="price">$300.00</p>
-            <button onclick="setArt('Golden Sunset')">Inquire to Buy</button>
-        </div>
+    <div class="art-card abstract">
+        <img src="https://images.unsplash.com/photo-1515405299443-f71bb7740d0c?w=500" alt="Art">
+        <div class="art-info"><h3>Chaos Theory</h3><p class="price">$130</p><button onclick="setArt('Chaos Theory')">Inquire</button></div>
     </div>
-
+    <div class="art-card portrait">
+        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?w=500" alt="Art">
+        <div class="art-info"><h3>The Muse</h3><p class="price">$350</p><button onclick="setArt('The Muse')">Inquire</button></div>
     </div>
+    <div class="art-card abstract">
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=500" alt="Art">
+        <div class="art-info"><h3>Shadow Work</h3><p class="price">$160</p><button onclick="setArt('Shadow Work')">Inquire</button></div>
+    </div>
+</div>
 
 <section id="inquiry-form">
-    <h2>Purchase Inquiry</h2>
-    <p>Click "Inquire to Buy" on any artwork above to select it.</p>
+    <h2>Ready to Purchase?</h2>
     <form action="/inquiry" method="POST">
-        <input type="text" id="artTitle" name="artTitle" readonly placeholder="Selected Artwork" style="background-color: #eee;"><br>
-        <input type="text" name="customerName" placeholder="Your Name" required><br>
-        <input type="email" name="email" placeholder="Your Email" required><br>
-        <textarea name="message" placeholder="Questions or delivery details?"></textarea><br>
-        <button type="submit">Send Message to Artist</button>
+        <input type="text" id="artTitle" name="artTitle" readonly placeholder="Select art above">
+        <input type="text" name="customerName" placeholder="Your Full Name" required>
+        <input type="email" name="email" placeholder="Your Email Address" required>
+        <textarea name="message" placeholder="Include your delivery address or any questions here..."></textarea>
+        <button type="submit">Send Purchase Inquiry</button>
     </form>
 </section>
 
@@ -68,6 +88,17 @@
     function setArt(name) {
         document.getElementById('artTitle').value = name;
         document.getElementById('inquiry-form').scrollIntoView({behavior: 'smooth'});
+    }
+
+    function filterArt(category) {
+        const cards = document.getElementsByClassName('art-card');
+        for (let card of cards) {
+            if (category === 'all' || card.classList.contains(category)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        }
     }
 </script>
 
